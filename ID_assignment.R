@@ -17,14 +17,8 @@ workingDir = "C:/Users/User/Desktop/My Files/cotton pj/Prot mRNA ID assignment"
 setwd(workingDir)
 
 # 'Prot_ID_map' typically references the 'proteinIDmap.xlsx' already loaded earlier
-# data: protein-mRNA ID matching, mRNA data
-prot_mRNA_ID_map_data <- read.xlsx("proteinIDmap.xlsx")
-mRNA_data <- read.xlsx("mRNA seq exp data.xlsx")
-mRNA_data <- mRNA_data %>%
-  remove_rownames %>%
-  column_to_rownames(var=names(mRNA_data)[1]) %>%
-  as.data.frame()
-Prot_ID_map <- prot_mRNA_ID_map_data
+# data: protein-mRNA ID matching
+Prot_ID_map <- read.xlsx("proteinIDmap.xlsx")
 
 # Define column names for references
 prot_id <- "Protein.IDs"
