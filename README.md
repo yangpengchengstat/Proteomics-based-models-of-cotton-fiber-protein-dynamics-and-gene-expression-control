@@ -28,7 +28,7 @@ This repository contains three R scripts for cotton proteomics data analysis:
     once installation of ‘kohonen’ completed, find path in your computer:
      path...\R\win-library\R version...\kohonen\Distances
     
-    copy and paste the file “wcc3.cpp” into “Distances” folder found in step a.
+    copy and paste the file “wcc3.cpp” into “Distances” folder.
        
   - `tempR` (time-series / correlation functions)
   - `dplyr`, `tibble`, `tidyverse` (data manipulation & I/O)
