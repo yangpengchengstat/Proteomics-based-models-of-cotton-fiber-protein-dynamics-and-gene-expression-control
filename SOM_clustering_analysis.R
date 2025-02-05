@@ -76,14 +76,6 @@ for (frac in fraction_names){
   rm(prots_noation_table)
 }
 
-# Additional data: protein-mRNA ID matching, mRNA data
-prot_mRNA_ID_map_data <- read.xlsx("proteinIDmap.xlsx")
-mRNA_data <- read.xlsx("mRNA seq exp data.xlsx")
-mRNA_data <- mRNA_data %>%
-  remove_rownames %>%
-  column_to_rownames(var=names(mRNA_data)[1]) %>%
-  as.data.frame()
-
 ##########################################################
 # 2) SOM clustering analysis on each fraction
 ##########################################################
