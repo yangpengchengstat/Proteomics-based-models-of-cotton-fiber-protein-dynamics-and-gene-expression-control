@@ -31,5 +31,3 @@ This repository contains three R scripts for cotton proteomics data analysis:
   - `ggplot2` (plotting)
   - `openxlsx` (reading/writing XLSX)
   - `Rcpp` (interfaces to C++ for certain distance measures)
-
-<br />
